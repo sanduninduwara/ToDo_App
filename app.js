@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 let ejs = require("ejs");
-const { redirect } = require("express/lib/response");
+// const { redirect } = require("express/lib/response");
 // const https = require("https");
 const mongoose = require("mongoose");
 
@@ -111,7 +111,7 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
-app.listen(port);
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
