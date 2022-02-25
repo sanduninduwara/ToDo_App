@@ -1,0 +1,98 @@
+/* html {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a6e3e9 50%, #e3fdfd 50%);
+  min-height: 1000px;
+  font-family: "helvetica neue";
+} */
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+
+body {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a6e3e9 53.5%, #d1fbfb 50%);
+  /* font-family: "helvetica neue"; */
+  font-family: "Redressed", cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  color: #0d4c4f;
+}
+
+.container {
+  margin-top: 80px;
+  padding: 40px;
+  /* padding-top: 100px; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  margin: 10px;
+  font-size: 22px;
+}
+
+.btnn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  width: 50px;
+  border-radius: 20%;
+  /* border-color: transparent; */
+  background-color: #47a2a7;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 0;
+  border-width: 0px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.item {
+  padding-left: 60px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #daffff;
+  vertical-align: middle;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+input[type="checkbox"]:checked + #todo {
+  text-decoration: line-through;
+}
+
+input[type="text"] {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 10px 0;
+  height: 50px;
+  /* top: 10px; */
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  /* background: transparent; */
+
+  border-color: #47a2a7;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+.btn {
+  margin-right: 50px;
+  margin-left: auto;
+}
+/* input,
+button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0;
+} */
