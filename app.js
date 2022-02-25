@@ -6,7 +6,7 @@ const { redirect } = require("express/lib/response");
 const mongoose = require("mongoose");
 
 const app = express();
-const port = 3000;
+// const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -106,6 +106,12 @@ app.post("/delete", (req, res) => {
 });
 
 //
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
